@@ -1,0 +1,82 @@
+<!-- Created by Nikky Amresh-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+        <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script><script>$(document).bind("mobileinit",function(){$.mobile.changePage.defaults.changeHash=!1,$.mobile.hashListeningEnabled=!1,$.mobile.pushStateEnabled=!1});</script><script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" /><script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script><script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script><link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.min.css" />
+    </head>
+
+    <body> <div id="body1">
+<div data-role="header" data-position="fixed" data-theme="a" class="ui-bar"><a id="so" class="ui-btn-left">SignOut</a><h1>Messenger</h1><img id="p_me" class="ui-btn-right avatar" /></div>
+
+
+<div class="bar"><h2 id="type"></h2></div>
+<a id="erroru" style="display:none" href="#error" data-rel="popup" data-position-to="window" data-transition="pop" ></a>
+<a href="#ok2" id="erroru2"></a>
+<div data-role="popup" id="error" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+    <div data-role="header" data-theme="a">
+    <h1 id="title" class="mar"></h1>
+    </div>
+    <div role="main" class="ui-content">
+<h3 class="ui-title" id="mess"></h3>
+    <p></p>
+     <a href="#" id="ok" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back">Got it</a><div id="ok2"></div>
+    </div>
+</div>
+<div role="main" class="ui-content">
+<div id="login_form">
+<input id="email" type="tel" value="" placeholder="10-digit Mobile number" maxlength="17"/>
+<input id="pass" value="" type="password" placeholder="password"/>
+ <button data-role="button" id="login" data-theme="a">Login</button>
+ <button data-role="button" id="sp" data-theme="a" >Sign Up</button>
+ </div>
+ <div id="sign_out">
+     <ul data-role="listview" id="j" data-filter="true" data-filter-placeholder="Search user..." data-inset="true">
+         
+     </ul>
+     <div id="sot"></div>
+ </div>
+</div>
+<div data-role="footer" data-position="fixed" data-theme="a" class="ui-bar">
+<h2>Copyright &copy; Shahariar Rijon </h2> <button id="loader" class="show-page-loading-msg" data-textonly="false" data-textvisible="true" data-msgtext="" data-inline="true">Icon + text</button><button id="hide_l" class="hide-page-loading-msg" data-inline="true" data-icon="delete">Hide</button></div>
+</div>
+       <div id="body2">
+<div data-role="header" data-position="fixed" data-theme="a" class="ui-bar fixed top"><a id="back" class="ui-btn-left">Back</a>
+<h1 id="n_user">Name</h1>
+    <img id="p_user" class="ui-btn-right" />
+</div>
+   <div class="msg-list"><span id="ap"></span>
+</div>
+<div data-role="footer" class="fixed bottom" data-position="fixed">
+    <input id="msg" autocorrect="off" autocomplete="off" placeholder="type a message.. ">
+    <a id="send" class="ui-btn-right">Send</a>
+</div>
+</div>
+<div id="profile">
+<div data-role="header" data-position="fixed" data-theme="a" class="ui-bar fixed top"><a id="back2" class="ui-btn-left">Back</a>
+<h1>Profile</h1>
+</div>
+    <div role="main" class="ui-content">
+       <img id="p_profile_me" onclick="photo_update();" class="me_p" />
+      <span onclick="name_update();" id="p_name"></span><br>
+        <div class="mob">Mobile no: <span id="mob"></span> </div>
+      <a data-role="button"  id="btncp" data-theme="a" data-position-to="window" data-transition="pop" >Change Password</a>
+      
+      <div id="cpass"  data-overlay-theme="b" data-theme="b" data-dismissible="false" style="display:none;max-width:400px;">
+    <div role="main" class="ui-content">
+   <input placeholder="New Password" type="password" id="pass1"/>
+    <input placeholder="Confirm Password" type="password" id="pass2" />
+     <a onclick="c_pass()" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b">Change</a>
+<a id="cancel" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b">Cancel</a>
+    </div>
+</div>
+      
+   </div>
+<div data-role="footer" class="fixed bottom" data-position="fixed">
+ <h2>Copyright &copy; Shahariar Rijon </h2>
+</div>
+</div>
+    </body>
+</html>
