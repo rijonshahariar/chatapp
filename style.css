@@ -117,17 +117,12 @@ input#msg{
     position: relative;
 }
 .message.to {
-    border:none;
-    outline:none;
-    border-radius:40px;
-    padding:0 20px;
-    border:2px solid #006eff;
-    background: rgb(233, 233, 233);
-    font-size: 17px;
-    margin-right:4px;
-    margin-left: 4px;
-    float: right;
-    width: 100%;
+    background: #2095FE;
+  border-radius: 5px 0px 5px 5px;
+  float: right;
+  clear:both;
+  color:#fff;
+  display:block;
 }
 .message.from {
     background-color: #E5E4E9;
