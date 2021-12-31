@@ -1,0 +1,162 @@
+  /* Created by Nikky Amresh */
+
+  .bar{
+    margin-top:80px;
+}
+#next{margin-top:30px;}
+h2{
+    padding-left:10px;
+    text-align:center;
+}
+.no-close .ui-dialog-titlebar-close {
+
+display: none;
+
+}
+.ui-widget-overlay {
+  background-color:#dcdcff;
+  opacity: 1; 
+  }
+b.error{
+    Color:red;
+}
+#sign_out{
+    display:none;
+    text-align:right;
+}
+img.avatar{
+    width:40px;
+    color:#d3d3d3;
+    box-shadow:0px 0px 1px 3px #d3d3d3;
+    right:40px;
+}
+img.me_p{
+    width:80px;
+    margin-top:40px;
+    margin-left:20px;
+    color:#d3d3d3;
+    box-shadow:0px 0px 1px 3px #d3d3d3;
+    right:80px;
+    vertical-align:middle;
+}
+#input{
+   display:none;
+   background-color:#fff;
+}
+#loader{
+    display:none;
+}
+#hide_l{
+    display:none;
+}
+#list_u{
+    display:none;
+}
+li{
+    text-align:left;
+}
+.l_p{
+    border:3px solid #d3d3d3;
+    width:54px;
+    height:54px;
+    vertical-align:middle;
+    margin-right:10px;
+    margin-left:10px;
+    margin-top:10px;
+    color:#d3d3d3;
+    box-shadow:0px 0px 1px 3px #d3d3d3;
+    text-align:left;
+    border:1px solid;
+}
+#list{display:none;}
+h2#type{
+}
+#body2{
+    display:none;
+}
+.fixed{
+    position:fixed;
+}
+.bottom{
+    bottom:0px;
+}
+#p_name{
+    padding-right:50px;
+    font-size:25px;
+    font-weight:bold;
+    margin-left:30px;
+}
+.top{
+    top:0px;
+}
+.message{
+    
+}
+img.ui-btn-right{
+    width:40px;
+    color:#d3d3d3;
+    box-shadow:0px 0px 1px 3px #d3d3d3;
+    right:40px;
+}
+input#msg{
+    width:80%;
+    padding-right:50px;
+}
+
+.msg-list {
+  padding-top: 50px;
+  padding-bottom:50px;
+  width:100%;
+  height:100%;
+  overflow-x: hidden;
+  position: absolute;
+}
+.message {
+    border-radius: 20px 20px 0px 0px;
+    margin: 0 10px 8px;
+    padding: 8px 15px;
+    position: relative;
+}
+.message.to {
+  background: #2095FE;
+  border-radius: 5px 0px 5px 5px;
+  float: right;
+  clear:both;
+  color:#fff;
+  display:block;
+}
+.message.from {
+    background-color: #E5E4E9;
+    color: #363636;
+    float:left;
+    border-radius: 5px 5px 5px 0px;
+    clear:both;
+    display:block;
+    
+}
+#sot{
+    margin-bottom:40px;
+}
+#error{
+    margin-bottom:100px;
+}
+#profile{
+    display:none;
+}
+a{
+    Text-decoration:none;
+}
+.mob{
+    font-size:25px;
+    margin:40px;
+    float:right;
+    margin-right:40px;
+    clear:both;
+}
+#pass1,#pass2{
+    background-color:#d3d3d3;
+    color:black;
+}
+.mar{
+    Margin:-100px;
+}
