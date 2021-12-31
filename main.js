@@ -1,13 +1,16 @@
- var config = {
+
+
+
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var config = {
     apiKey: "AIzaSyA56iZtgEEScOeTHuLf6HsFUw8jXFCjOLs",
     authDomain: "chatapp-2a8f8.firebaseapp.com",
-    databaseURL: "https://chatapp-2a8f8-default-rtdb.firebaseio.com",
+    databaseURL: "https://chatapp-2a8f8-default-rtdb.firebaseio.com/",
     projectId: "chatapp-2a8f8",
     storageBucket: "chatapp-2a8f8.appspot.com",
-    appId: "1:834969899284:web:806ede03bc257bf8bdb201",
     messagingSenderId: "834969899284",
+    appId: "1:834969899284:web:806ede03bc257bf8bdb201",
     measurementId: "G-1SSXVRBK5Z"
-
   };
     var color,title,email,pass;
   firebase.initializeApp(config);
@@ -56,7 +59,7 @@ ref=firebase.database().ref().child('users');
      u_p=n.authorPic;
      u_e=n.email;
      if(u_e!=k && u_n!=undefined){
- li= "<li><a href='#' name="+u_e+" onclick='newm(this)'><img class='l_p' src='https://api.sololearn.com/Uploads/Avatars/"+u_p+".jpg' />"+u_n+"</a></li>";
+ li= "<li><a href='#' name="+u_e+" onclick='newm(this)'><img class='l_p' src='https://api.sololearn.com/Uploads/Avatars/3198027.jpg' />"+u_n+"</a></li>";
  $("ul").append(li);
  var src =  "https://api.sololearn.com/Uploads/Avatars/3198027.jpg";
  var img=$("img.l_p");
@@ -101,14 +104,14 @@ function check(e){
 }
 function photo_update(e){
 var user = firebase.auth().currentUser;
-   var solo_id=prompt("Enter your Sololearn id","3198027");
+   
    if (solo_id==null || solo_id==""){solo_id="3198027"}
 if(solo_id!=null){ user.providerData.forEach(function (profile) {
 var uid=profile.photoURL,username=profile.displayName,
  picture=solo_id;      
   writeNewPost(uid, username, picture);
-$("img.avatar").attr("src","https://api.sololearn.com/Uploads/Avatars/"+solo_id+".jpg");
-$("img.me_p").attr("src","https://api.sololearn.com/Uploads/Avatars/"+solo_id+".jpg");
+$("img.avatar").attr("src","https://api.sololearn.com/Uploads/Avatars/3198027.jpg");
+$("img.me_p").attr("src","https://api.sololearn.com/Uploads/Avatars/3198027.jpg");
 });}
 }
 function writeNewPost(uid, username,pic) {
@@ -150,7 +153,7 @@ function s_new(e){
    name=s.author;
    test=s.email;
    src=s.authorPic;
- src="https://api.sololearn.com/Uploads/Avatars/"+ src+".jpg";
+ src="https://api.sololearn.com/Uploads/Avatars/3198027.jpg";
    $("#n_user").html(name);
    $("#p_user").attr("src",src);
    var img=$("#p_user");
@@ -299,9 +302,9 @@ if (user != null) {
 var uid=k,username=(profile.displayName || name_update()); 
   var userId = firebase.auth().currentUser.uid;
   return firebase.database().ref('/users/'+k).once('value').then(function(snapshot) {
-  var pic = (snapshot.val() && snapshot.val().authorPic) || prompt("Enter your Sololearn id","3198027");
-if(pic==null || pic==""){pic=="3198027"} $("img.avatar").attr("src","https://api.sololearn.com/Uploads/Avatars/"+pic+".jpg");
-$("img.me_p").attr("src","https://api.sololearn.com/Uploads/Avatars/"+pic+".jpg");
+  var pic = (snapshot.val() && snapshot.val().authorPic)
+if(pic==null || pic==""){pic=="3198027"} $("img.avatar").attr("src","https://api.sololearn.com/Uploads/Avatars/3198027.jpg");
+$("img.me_p").attr("src","https://api.sololearn.com/Uploads/Avatars/3198027.jpg");
  $("#p_name").html(username);
  user_list();
     $("#hide_l").click();
