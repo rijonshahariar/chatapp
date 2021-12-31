@@ -135,6 +135,7 @@ input#msg{
 }
 #sot{
     margin-bottom:40px;
+  float:left;
 }
 #error{
     margin-bottom:100px;
